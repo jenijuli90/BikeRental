@@ -66,7 +66,7 @@ The following business questions were addressed using SQL queries:
 
 ## Technologies Used:
 - **SQL**: For querying the database and performing data manipulations.
-- **MSSQLSERVER** : The database management system used to execute SQL queries and manage the data.
+- **MSSQL SERVER** : The database management system used to execute SQL queries and manage the data.
 
 ## Future Improvements:
 - **Data Visualization**: Integrate the results with tools like Tableau or Power BI to create visual reports and dashboards.
