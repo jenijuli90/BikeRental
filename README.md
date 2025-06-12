@@ -48,18 +48,19 @@ The following business questions were addressed using SQL queries:
   - **CTE**
 
 ## Files Used
-+ **create_database_and_tables.sql :** This file contains all the SQL statements required to create the database schema, including the creation of all the tables.
-+ **bike_rental_case_study_queries.sql:** This file contains all the SQL queries to answer the above business questions.
-+ **DATASET-Bike_Rental_Case_Study.sql:** This file contains the sample data.
++ **bike_rental_create_db.sql :** This file contains all the SQL statements required to create the database schema, including the creation of all the tables.
++ **bike_rental_dataset.sql:** This file contains the sample data.
++ **bike_rental_queries.sql:** This file contains all the SQL queries to answer the above business questions.
+
 
 ## How to Run the SQL Queries
 
 1. **Set up the database**:
-   - Run the `create_database_and_tables.sql` script to create all the necessary tables in your SQL database.
-   - Execute the `DATASET-Bike_Rental_Case_Study.sql` file to populate the tables with sample data.
+   - Run the 'bike_rental_create_db.sql' script to create database and all the necessary tables in the SQL database.
+   - Execute the 'bike_rental_dataset.sql' file to populate the tables with sample data.
    
 2. **Run the business queries**:
-   - Open the `bike_rental_case_study_queries.sql` file in your SQL client (e.g., MySQL Workbench, SQL Server Management Studio, or any other SQL client).
+   - Open the 'bike_rental_queries.sql' file in your SQL client (e.g., MySQL Workbench, SQL Server Management Studio, or any other SQL client).
    - Execute the queries in sequence or run the entire script to get the results for all business questions.
 
 3. **Analyze the results**:
