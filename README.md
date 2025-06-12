@@ -49,7 +49,8 @@ The following business questions were addressed using SQL queries:
 
 ## Files Used
 + **create_database_and_tables.sql :** This file contains all the SQL statements required to create the database schema, including the creation of all the tables.
-+ **bike_rental_case_study_queries.sql:** This file contains all the SQL queries to answer the above business questions
++ **bike_rental_case_study_queries.sql:** This file contains all the SQL queries to answer the above business questions.
++ **DATASET-Bike_Rental_Case_Study.sql:** This file contains the sample data.
 
 ## How to Run the SQL Queries
 
