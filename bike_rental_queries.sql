@@ -17,7 +17,7 @@ SELECT
     COUNT(*) AS number_of_bikes
 FROM bike
 GROUP BY category
-HAVING COUNT(*) > 2;
+HAVING COUNT(*) > 2
 
 
 -- Query 2: List of customers and the total number of memberships purchased
@@ -31,7 +31,7 @@ SELECT
 FROM customer c
 LEFT JOIN membership m ON c.id = m.customer_id
 GROUP BY c.id
-ORDER BY membership_count DESC;
+ORDER BY membership_count DESC
 
 
 -- Query 3: New rental prices with discounts
@@ -56,7 +56,7 @@ SELECT
         WHEN category = 'Mountain' THEN ROUND(price_per_day - (price_per_day * 0.5), 2)
         ELSE price_per_day * 0.5
     END AS new_price_per_day
-FROM bike;
+FROM bike
 
 
 -- Query 4: Count of rented and available bikes by category
@@ -68,7 +68,7 @@ SELECT
     COUNT(CASE WHEN status = 'available' THEN 1 END) AS available_bikes_count,
     COUNT(CASE WHEN status = 'rented' THEN 1 END) AS rented_bikes_count
 FROM bike
-GROUP BY category;
+GROUP BY category
 
 
 -- Query 5: Total rental revenue by month and year
@@ -82,7 +82,7 @@ SELECT
     SUM(total_paid) AS revenue 
 FROM rental
 GROUP BY GROUPING SETS((YEAR(start_datetime), MONTH(start_datetime)), YEAR(start_datetime), ())
-ORDER BY year, month;
+ORDER BY year, month
 
 
 -- Query 6: Total revenue from memberships by year, month, and membership type
@@ -98,7 +98,7 @@ SELECT
 FROM membership m 
 INNER JOIN membership_type mt ON mt.id = m.membership_type_id
 GROUP BY YEAR(start_date), MONTH(start_date), mt.name
-ORDER BY year, month, revenue;
+ORDER BY year, month, revenue
 
 
 -- Query 7: Membership revenue for 2023 by membership type and month
@@ -114,12 +114,12 @@ FROM membership m
 INNER JOIN membership_type mt ON mt.id = m.membership_type_id
 WHERE YEAR(start_date) = '2024'
 GROUP BY GROUPING SETS((MONTH(start_date), mt.name), (mt.name), ())
-ORDER BY name, month;
+ORDER BY name, month
 
 
--- Query 8: Segment customers by the number of rentals they’ve made
+-- Query 8: Segment customers by the number of rentals theyâ€™ve made
 -- ==========================
--- This query categorizes customers based on the number of rentals they’ve made. 
+-- This query categorizes customers based on the number of rentals theyâ€™ve made. 
 -- Customers are categorized into three groups: 'more than 10', 'between 5 and 10', and 'fewer than 5'.
 WITH no_of_rentals AS (
     SELECT 
@@ -138,4 +138,4 @@ SELECT
     COUNT(*) AS customer_count
 FROM no_of_rentals
 GROUP BY rental_count_category
-ORDER BY customer_count;
+ORDER BY customer_count
