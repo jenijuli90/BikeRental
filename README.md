@@ -1,6 +1,6 @@
 # Bike Rental Shop - SQL Case Study
 
-## Overview:
+## Overview
 
 This project is a case study from **LearnSQL.com**, designed to answer business-critical questions for a bike rental shop. The dataset includes customer information, bike details, rental history, membership types, and membership purchases. The goal is to leverage SQL to help the shop owner make informed business decisions, such as improving pricing strategies, understanding rental demand, and optimizing customer segmentation.
 This project was completed as part of an SQL learning exercise, and the queries were used to generate insights from the provided dataset.
@@ -39,7 +39,7 @@ The following business questions were addressed using SQL queries:
 
 **Customer Rental Segmentation:** Categorizing customers based on their rental frequency (e.g., more than 10 rentals, between 5-10 rentals, fewer than 5 rentals).
 
- ## Techniques Used:
+ ## Techniques Used
   - **Aggregation** (`COUNT()`, `SUM()`, `GROUP BY`)
   - **Conditional Logic** (`CASE WHEN` for discounts)
   - **Joins** (`INNER JOIN`, `LEFT JOIN`)
@@ -70,7 +70,7 @@ The following business questions were addressed using SQL queries:
 - **SQL**: For querying the database and performing data manipulations.
 - **MSSQL SERVER** : The database management system used to execute SQL queries and manage the data.
 
-## Future Improvements:
+## Future Improvements
 - **Data Visualization**: Integrate the results with tools like Tableau or Power BI to create visual reports and dashboards.
 - **Optimizations**: More efficient queries can be written to handle larger datasets, especially with indexing and query tuning.
 - **Additional Queries**: New questions could be added for deeper insights into customer behavior and rental patterns.
