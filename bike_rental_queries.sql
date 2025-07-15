@@ -101,9 +101,9 @@ GROUP BY YEAR(start_date), MONTH(start_date), mt.name
 ORDER BY year, month, revenue
 
 
--- Query 7: Membership revenue for 2023 by membership type and month
+-- Query 7: Membership revenue for 2024 by membership type and month
 -- ==========================
--- This query calculates the membership revenue for the year 2023, broken down by 
+-- This query calculates the membership revenue for the year 2024, broken down by 
 -- month and membership type. It also includes subtotals and grand totals.
 
 SELECT 
